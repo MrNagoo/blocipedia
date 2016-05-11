@@ -1,2 +1,11 @@
-<h1>Wikis#edit</h1>
-<p>Find me in app/views/wikis/edit.html.erb</p>
+<h1>Edit Wiki</h1>
+<%= form_for @wiki do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <%= f.label :private %>
+  <%= f.check_box :private %>
+
+  <%= f.submit "Update" %>
+<% end %>

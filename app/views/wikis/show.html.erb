@@ -1,2 +1,6 @@
-<h1>Wikis#show</h1>
-<p>Find me in app/views/wikis/show.html.erb</p>
+<h1>This Wiki</h1>
+
+<%= @wiki.title %>
+<%= @wiki.body %>
+
+<%= link_to "Delete", @wiki, method: :delete, data: { confirm: "Are you sure?"} %>
