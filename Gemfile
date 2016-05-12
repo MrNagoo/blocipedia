@@ -39,3 +39,11 @@ source 'https://rubygems.org'
  gem 'figaro', '1.0'
 
  gem 'devise'
+
+ gem 'pundit'
+
+ gem 'faker'
+
+ gem 'stripe'
+
+ gem 'figaro', '1.0'
